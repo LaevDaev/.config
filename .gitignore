@@ -1,0 +1,6 @@
+*
+!niri/
+!niri/**
+!waybar/
+!waybar/**
+!.gitignore

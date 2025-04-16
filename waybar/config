@@ -1,0 +1,33 @@
+
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": [],
+  "modules-center": [],
+  "modules-right": ["temperature", "battery", "battery#bat1", "clock"],
+
+ 
+  "battery": {
+        "bat": "BAT0",
+        "format": "{capacity}%",
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "interval": 10
+    },
+  "battery#bat1": {
+        "bat": "BAT1",
+        "format": "{capacity}%",
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "interval": 10
+  },
+
+  "clock": {
+	"format": "{:%H:%M}  ",
+	"tooltip-format": "{:%A, %d %B, %Y}"
+  }
+}
